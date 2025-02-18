@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Send2Me</title>
+  
+  <!-- Main stylesheet -->
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Load jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  
+  <!-- Load Toastr -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css"
+  />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+  
+  <!-- Load icons -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+  />
+</head>
+<body>
+  <!-- Send2Me -->
+  <header class="top-bar">
+    <h1>Send2Me</h1>
+  </header>
+
+  <!-- background, text -->
+  <main class="main-content">
+    <div class="prompt-container">
+      <p class="prompt-text">What would you say?</p>
+      <textarea
+        id="messageInput"
+        class="message-input"
+        placeholder="Type your message..."
+      ></textarea>
+    </div>
+    <!-- Message list -->
+    <ul id="messageList" class="message-list"></ul>
+  </main>
+
+  <!-- CLEAR ALL, + , SEND NOW -->
+  <footer class="bottom-bar">
+    <button id="clearBtn" class="btn btn-clear">CLEAR ALL</button>
+    <button id="addBtn" class="btn btn-plus">+</button>
+    <button id="sendBtn" class="btn btn-send">SEND NOW</button>
+  </footer>
+
+  <!-- Load JS module -->
+  <script type="module" src="main.js"></script>
+</body>
+</html>
